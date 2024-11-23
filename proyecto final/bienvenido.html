@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Preguntas</title>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+<body>
+
+    <div class="container">
+<h1>Formulario de Preguntas</h1>
+<form id="quizForm" onsubmit="return calcularPuntuacion(event)">
+    <div>
+        <label>1. ¿Cuál es la capital de Francia?</label><br>
+        <img src="img/francia.jfif" alt="Francia" width="200px"><br>
+        <input type="radio" name="pregunta1" value="correcta"> París<br>
+        <input type="radio" name="pregunta1" value="incorrecta"> Londres<br>
+        <input type="radio" name="pregunta1" value="incorrecta"> Berlín<br>
+    </div>
+
+    <div>
+        <label>2. ¿Qué es el ADN?</label><br>
+        <img src="img/adn.png" alt="Adn" width="150px"><br>
+        <input type="radio" name="pregunta2" value="correcta"> Ácido desoxirribonucleico<br>
+        <input type="radio" name="pregunta2" value="incorrecta"> Ácido ribonucleico<br>
+    </div>
+
+    <div>
+        <label>3. ¿Cuántos planetas hay en el sistema solar?</label><br>
+        <img src="img/sistemasolar.jfif" alt="Adn" width="250px"><br>
+        <select name="pregunta3" class="pre3">
+            <option value="incorrecta">7</option>
+            <option value="correcta">8</option>
+            <option value="incorrecta">9</option>
+        </select>
+    </div>
+
+    <div>
+        <label>4. ¿Cuál es el continente más grande?</label><br>
+        <img src="img/continentes.jfif" alt="Adn" width="250px"><br>
+        <input type="radio" name="pregunta4" value="correcta"> Asia<br>
+        <input type="radio" name="pregunta4" value="incorrecta"> África<br>
+        <input type="radio" name="pregunta4" value="incorrecta"> America<br>
+        <input type="radio" name="pregunta4" value="incorrecta"> Oceania<br>
+    </div>
+
+    <div>
+        <label>5. ¿Qué elemento químico tiene el símbolo O?</label><br>
+        <img src="img/quimicos.jfif" alt="Adn" width="250px"><br>
+        <input type="radio" name="pregunta5" value="incorrecta"> Mercurio<br>
+        <input type="radio" name="pregunta5" value="incorrecta"> Azufre<br>
+        <input type="radio" name="pregunta5" value="correcta"> Oxígeno<br>
+        <input type="radio" name="pregunta5" value="incorrecta"> Oro<br>
+    </div>
+
+    <div>
+        <label>6. ¿Cuáles son los colores de la bandera de España?</label><br>
+        <img src="img/spain.jfif" alt="Adn" width="250px"><br>
+        <input type="checkbox" name="pregunta6" value="rojo"> Rojo<br>
+        <input type="checkbox" name="pregunta6" value="amarillo"> Amarillo<br>
+        <input type="checkbox" name="pregunta6" value="verde"> Verde<br>
+    </div>
+
+    <div>
+        <label>7. ¿Quién escribió "Cien años de soledad"?</label><br>
+        <img src="img/cien.jfif" alt="Adn" width="250px"><br>
+        <input type="radio" name="pregunta7" value="incorrecta"> Stephen King<br>
+        <input type="radio" name="pregunta7" value="incorrecta"> William shakespeare<br>
+        <input type="radio" name="pregunta7" value="correcta"> Gabriel García Márquez<br>
+        <input type="radio" name="pregunta7" value="incorrecta"> Julio Cortázar<br>
+    </div>
+
+    <div>
+        <label>8. ¿Cuál es el río más largo del mundo?</label><br>
+        <img src="img/amazonas.jfif" alt="Adn" width="250px"><br>
+        <input type="radio" name="pregunta8" value="incorrecta"> Misisipi<br>
+        <input type="radio" name="pregunta8" value="incorrecta"> Nilo<br>
+        <input type="radio" name="pregunta8" value="correcta"> Amazonas<br>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
+
+<div id="resultado" class="resultado" style="display:none;"></div>
+
+</div>
+
+<script src="scripform.js"></script>
+</body>
+</html>
